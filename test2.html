@@ -44,7 +44,7 @@ function myFacebookLogin() {
         var li = document.createElement('li');
         var a = document.createElement('a');
         a.href = "#"
-        a.onclick = subscibeApp.binf(this, page.id, page.access_token);
+        a.onclick = subscibeApp.bind(this, page.id, page.access_token);
         a.innerHTML = page.name;
         li.appendChild(a);
         ul.appendChild(li);
