@@ -69,6 +69,6 @@ console.log('successfully logged in', response);
 
 
 <fb:login-button scope="public_profile,manage_pages" onlogin="checkLoginState();">
-</fb:login-button>
+login</fb:login-button>
 
 <ul id="list"></ul>
