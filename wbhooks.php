@@ -4,8 +4,10 @@ $challenge = $_REQUEST['hub_challenge'];
 $verify_token = $_REQUEST['hub_verify_token'];
 
 if ($verify_token === 'abc1234') {
-echo $challenge;
+    echo $challenge;
+}
+else{
+    echo "Error, wrong validation token";
 }
 
-$input = json_decode(file_get_contents('php:://input'), true);
-error_log(print_r($input, true))
+?>
