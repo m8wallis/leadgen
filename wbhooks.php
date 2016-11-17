@@ -8,4 +8,9 @@ if ($verify_token === 'abc12345') {
 }
 $input = json_decode(file_get_contents('php:://input'), true);
 
+use FacebookAds\Object\Lead;
+
+$form = new Lead(<LEAD_ID>);
+$form->read();
+
 ?>
