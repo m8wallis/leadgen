@@ -8,6 +8,9 @@ $form->read();
 //pulls email address out of the form, puts it into the $email variable
 preg_match("/[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})/i", $form, $email);
 
+echo $email;
+echo 'hey there';
+
 $challenge = $_REQUEST['hub_challenge'];
 $verify_token = $_REQUEST['hub_verify_token'];
 
