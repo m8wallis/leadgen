@@ -1,12 +1,12 @@
 <?php
-include 'whatcounts-master/src/whatcounts_required.php';
+//include 'whatcounts-master/src/whatcounts_required.php';
 
-use FacebookAds\Object\Lead;
-$form = new Lead(<LEAD_ID>);
+//use FacebookAds\Object\Lead;
+//$form = new Lead(<LEAD_ID>);
 //$form->read();
 
 //pulls email address out of the form, puts it into the $email variable
-preg_match("/[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})/i", $form, $email);
+//preg_match("/[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})/i", $form, $email);
 
 $challenge = $_REQUEST['hub_challenge'];
 $verify_token = $_REQUEST['hub_verify_token'];
