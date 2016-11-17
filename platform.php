@@ -20,7 +20,7 @@
 
   function subscribeApp(page_id, page_access_token) {
     console.log('Subscribing page to app! ' + page_id);
-    alert('Subscribing page to app! ' + page_id);
+    alert('Subscribing page to app! ' + page_id + page_name);
     FB.api(
       '/' + page_id + '/subscribed_apps',
       'post',
@@ -53,4 +53,4 @@
   }
 </script>
 <button onclick="myFacebookLogin()">Login with Facebook</button>
-<ul id="list">asda</ul>
+<ul id="list"></ul>
