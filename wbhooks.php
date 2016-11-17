@@ -1,5 +1,5 @@
 <?php
-//include 'whatcounts-master/src/whatcounts_required.php';
+include 'whatcounts-master/src/whatcounts_required.php';
 
 //use FacebookAds\Object\Lead;
 //$form = new Lead(<LEAD_ID>);
