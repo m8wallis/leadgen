@@ -14,10 +14,24 @@ error_log(print_r($input, true));
 require_once('Facebook/Facebook.php');
 require_once('Facebook/FacebookRequest.php');
 require_once('Facebook/Url/FacebookUrlManipulator.php');
+require_once('Facebook\Authentication\AccessToken.php');
+require_once('Facebook\FileUpload\FacebookFile.php');
+require_once('Facebook\FileUpload\FacebookVideo.php');
+require_once('Facebook\Http\RequestBodyMultipart.php');
+require_once('Facebook\Http\RequestBodyUrlEncoded.php');
+require_once('Facebook\Exceptions\FacebookSDKException.php');
 //include 'Facebook/Facebook.php';
 //include 'Facebook/FacebookRequest.php';
 use Facebook\FacebookRequest;
+
+//required
+use Facebook\Authentication\AccessToken;
 use Facebook\Url\FacebookUrlManipulator;
+use Facebook\FileUpload\FacebookFile;
+use Facebook\FileUpload\FacebookVideo;
+use Facebook\Http\RequestBodyMultipart;
+use Facebook\Http\RequestBodyUrlEncoded;
+use Facebook\Exceptions\FacebookSDKException;
 
 
 /* PHP SDK v5.0.0 */
