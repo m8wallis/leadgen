@@ -20,8 +20,8 @@ error_log(print_r($input, true));
 
 preg_match("/[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})/i", $input, $email);
 
-foreach($email['data'] as $email) {
-    echo $email['type'], '<br>';
+foreach($email['data'] as $result) {
+    echo $result['type'], '<br>';
 }
 
 ?>
