@@ -18,7 +18,7 @@ if ($verify_token === 'abc12345') {
 $input = json_decode(file_get_contents('php://input'), true);
 error_log(print_r($input, true));
 
-preg_match("/[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})/i", $input, $email);
+//preg_match("/[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})/i", $input, $email);
 
 //print_r($email);
 print_r($input);
