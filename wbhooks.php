@@ -13,6 +13,7 @@ error_log(print_r($input, true));
 
 require_once('Facebook/Facebook.php');
 require_once('Facebook/FacebookRequest.php');
+require_once('Facebook/Url/FacebookUrlManipulator.php');
 //include 'Facebook/Facebook.php';
 //include 'Facebook/FacebookRequest.php';
 use Facebook\FacebookRequest;
