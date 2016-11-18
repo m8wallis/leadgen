@@ -23,8 +23,4 @@ error_log(print_r($input, true));
 //print_r($email);
 print_r($input);
 
-$var_str = var_export($input, true);
-$var = "<?php\n\n\$input = $var_str;\n\n?>";
-file_put_contents('output.php', $var);
-
 ?>
