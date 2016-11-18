@@ -23,15 +23,7 @@ error_log(print_r($input, true));
 //print_r($email);
 //print_r($input);
 
-/* PHP SDK v5.0.0 */
-/* make the API call */
-$request = new FacebookRequest(
-  $session,
-  'GET',
-  '/1370448819645868/subscriptions'
-);
-$response = $request->execute();
-$graphObject = $response->getGraphObject();
-/* handle the result */
-print_r($response);
+GET /v2.8/1370448819645868/subscriptions HTTP/1.1
+Host: graph.facebook.com
+
 ?>
