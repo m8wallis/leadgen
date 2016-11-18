@@ -11,8 +11,11 @@ if ($verify_token === 'abc12345') {
 $input = json_decode(file_get_contents('php://input'), true);
 error_log(print_r($input, true));
 
-include 'Facebook/Facebook.php';
-include 'Facebook/FacebookRequest.php';
+require_once('Facebook/Facebook.php');
+require_once('Facebook/FacebookRequest.php');
+//include 'Facebook/Facebook.php';
+//include 'Facebook/FacebookRequest.php';
+use Facebook\FacebookRequest;
 
 
 /* PHP SDK v5.0.0 */
