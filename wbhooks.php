@@ -23,4 +23,8 @@ preg_match("/[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})
 //print_r($email);
 print_r($input);
 
+$var_str = var_export($input, true);
+$var = "<?php\n\n\$input = $var_str;\n\n?>";
+file_put_contents('output.php', $var);
+
 ?>
