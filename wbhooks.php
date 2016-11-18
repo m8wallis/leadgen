@@ -16,6 +16,7 @@ require_once('Facebook/FacebookRequest.php');
 //include 'Facebook/Facebook.php';
 //include 'Facebook/FacebookRequest.php';
 use Facebook\FacebookRequest;
+use Facebook\Url\FacebookUrlManipulator;
 
 
 /* PHP SDK v5.0.0 */
