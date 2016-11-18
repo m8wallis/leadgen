@@ -21,6 +21,19 @@ error_log(print_r($input, true));
 //preg_match("/[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})/i", $input, $email);
 
 //print_r($email);
-print_r($input);
+//print_r($input);
 
+/* PHP SDK v5.0.0 */
+/* make the API call */
+$request = new FacebookRequest(
+  $session,
+  'GET',
+  '/1370448819645868/subscriptions'
+  'object' => 'page'
+  'fields' => 'email'
+);
+$response = $request->execute();
+$graphObject = $response->getGraphObject();
+/* handle the result */
+print_r($response);
 ?>
