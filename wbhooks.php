@@ -28,9 +28,9 @@ error_log(print_r($input, true));
 $request = new FacebookRequest(
   $session,
   'GET',
-  '/1370448819645868/subscriptions'
-  'object' => 'page'
-  'fields' => 'email'
+  '/1370448819645868/subscriptions',
+  'object' => 'page',
+  'fields' => 'email',
 );
 $response = $request->execute();
 $graphObject = $response->getGraphObject();
