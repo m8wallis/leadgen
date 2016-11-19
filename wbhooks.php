@@ -39,7 +39,7 @@ use Facebook\Http\RequestBodyInterface;
 
 /* PHP SDK v5.0.0 */
 /* make the API call */
-$request = new FacebookRequest(
+$request = new Facebook\FacebookRequest(
   $session,
   'GET',
   '/1370448819645868/subscriptions'
