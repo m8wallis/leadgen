@@ -20,6 +20,7 @@ require_once('Facebook/FileUpload/FacebookVideo.php');
 require_once('Facebook/Http/RequestBodyMultipart.php');
 require_once('Facebook/Http/RequestBodyUrlEncoded.php');
 require_once('Facebook/Exceptions/FacebookSDKException.php');
+require_once('Facebook/Http/RequestBodyInterface.php');
 
 //include 'Facebook/Facebook.php';
 //include 'Facebook/FacebookRequest.php';
@@ -34,6 +35,7 @@ use Facebook\FileUpload\FacebookVideo;
 use Facebook\Http\RequestBodyMultipart;
 use Facebook\Http\RequestBodyUrlEncoded;
 use Facebook\Exceptions\FacebookSDKException;
+use Facebook\Http\RequestBodyInterface;
 
 
 /* PHP SDK v5.0.0 */
