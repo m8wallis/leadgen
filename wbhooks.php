@@ -32,10 +32,6 @@ function getLead($leadgen_id,$user_access_token) {
     }
     return $lead;
 }
-
-foreach($lead as $attr=>$val) {
-    
-}
     
 //Take input from Facebook webhook request
 $input = json_decode(file_get_contents('php://input'),true);
@@ -47,7 +43,7 @@ $user_access_token = 'EAATeansT7awBALJqOiA0L4M5BzO4cW8xawHak7f2FRd3ZB7jwWEklci9g
 //Get the lead info
 $lead = getLead($leadgen_id,$user_access_token);//get lead info
 
-//extract the data from facebook to new variables $email and $full_name
+//extract the data from facebook to new variables that were pre-definied earlier ($email and $full_name and $date_of_birth)
 extract($lead, EXTR_SKIP);
 
 //Print the variables to the error log to show it's working
