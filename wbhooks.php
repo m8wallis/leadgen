@@ -14,7 +14,7 @@ if ($verify_token === 'abc12345') {
 //getlead function
 function getLead($leadgen_id,$user_access_token) {
     //fetch lead info from FB API
-    $graph_url= 'https://graph.facebook.com/v2.5/'.$leadgen_id."?access_token=".$user_access_token;
+    $graph_url= 'https://graph.facebook.com/v2.8/'.$leadgen_id."?access_token=".$user_access_token;
     $ch = curl_init();
     curl_setopt($ch, CURLOPT_URL, $graph_url);
     curl_setopt($ch, CURLOPT_HEADER, 0);
