@@ -63,6 +63,6 @@ $mail.="</blockquote></body></html>";
 error_log(print_r($mail, true));
 
 $string=implode(",",$lead);
-error_log(print_r($string,true));
+error_log(print_r($string, true));
 
 ?>
