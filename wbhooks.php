@@ -24,32 +24,32 @@ error_log(print_r($input, true));
 
 //include 'Facebook/Facebook.php';
 //include 'Facebook/FacebookRequest.php';
-require 'Facebook.php';
+//require 'Facebook.php';
 
 
 
 
 //required
-use Facebook\Authentication\AccessToken;
-use Facebook\Url\FacebookUrlManipulator;
-use Facebook\FileUpload\FacebookFile;
-use Facebook\FileUpload\FacebookVideo;
-use Facebook\Http\RequestBodyMultipart;
-use Facebook\Http\RequestBodyUrlEncoded;
-use Facebook\Exceptions\FacebookSDKException;
-use Facebook\Http\RequestBodyInterface;
+//use Facebook\Authentication\AccessToken;
+//use Facebook\Url\FacebookUrlManipulator;
+//use Facebook\FileUpload\FacebookFile;
+//use Facebook\FileUpload\FacebookVideo;
+//use Facebook\Http\RequestBodyMultipart;
+//use Facebook\Http\RequestBodyUrlEncoded;
+//use Facebook\Exceptions\FacebookSDKException;
+//use Facebook\Http\RequestBodyInterface;
 
-require 'FacebookRequest.php';
-use Facebook\FacebookRequest;
+//require 'FacebookRequest.php';
+//use Facebook\FacebookRequest;
 /* PHP SDK v5.0.0 */
 /* make the API call */
-$request = new FacebookRequest(
-  $session,
-  'GET',
-  '/1370448819645868/subscriptions'
-);
-$response = $request->execute();
-$graphObject = $response->getGraphObject();
+//$request = new FacebookRequest(
+//  $session,
+//  'GET',
+//  '/1370448819645868/subscriptions'
+//);
+//$response = $request->execute();
+//$graphObject = $response->getGraphObject();
 /* handle the result */
-print_r($graphObject);
+//print_r($graphObject);
 ?>
