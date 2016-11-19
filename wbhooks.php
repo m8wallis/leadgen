@@ -42,5 +42,5 @@ $user_access_token = 'EAATeansT7awBABOrV8ZAbUZBkrLvReWJqmSJ8rAZAZC2qLlV1fNpbpqJe
 //Get the lead info
 $lead = getLead($leadgen_id,$user_access_token);//get lead info
 
-error_log(print_r($lead));
+error_log(print_r($lead),true);
 ?>
