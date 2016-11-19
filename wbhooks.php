@@ -72,7 +72,7 @@ foreach($lead as $attr=>$val) {
 $mail.="</blockquote></body></html>";
 error_log(print_r($mail, true));
 
-extract($lead, EXTR_PREFIX_SAME);
+extract($lead, EXTR_SKIP);
 error_log(print_r($email, true));
 error_log(print_r($full_name, true));
 
