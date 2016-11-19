@@ -1,5 +1,5 @@
 <?php
-include 'whatcounts-master/src/whatcounts_required.php';
+//include 'whatcounts-master/src/whatcounts_required.php';
 
 
 $challenge = $_REQUEST['hub_challenge'];
