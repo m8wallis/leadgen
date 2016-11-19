@@ -40,7 +40,7 @@ use Exceptions\FacebookSDKException;
 use Http\RequestBodyInterface;
 
 require 'FacebookRequest.php';
-use FacebookRequest;
+use Facebook\FacebookRequest;
 /* PHP SDK v5.0.0 */
 /* make the API call */
 $request = new FacebookRequest(
