@@ -11,45 +11,36 @@ if ($verify_token === 'abc12345') {
 $input = json_decode(file_get_contents('php://input'), true);
 error_log(print_r($input, true));
 
+//getlead function
+function getLead($leadgen_id,$user_access_token) {
+    //fetch lead info from FB API
+    $graph_url= 'https://graph.facebook.com/v2.5/'.$leadgen_id."?access_token=".$user_access_token;
+    $ch = curl_init();
+    curl_setopt($ch, CURLOPT_URL, $graph_url);
+    curl_setopt($ch, CURLOPT_HEADER, 0);
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+    curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 0);
+    $output = curl_exec($ch); 
+    curl_close($ch);
 
-//require('FacebookRequest.php');
-//require('Url/FacebookUrlManipulator.php');
-//require('Authentication/AccessToken.php');
-//require('FileUpload/FacebookFile.php');
-//require('FileUpload/FacebookVideo.php');
-//require('Http/RequestBodyMultipart.php');
-//require('Http/RequestBodyUrlEncoded.php');
-//require('Exceptions/FacebookSDKException.php');
-//require('Http/RequestBodyInterface.php');
+    //work with the lead data
+    $leaddata = json_decode($output);
+    $lead = [];
+    for($i=0;$i<count($leaddata->field_data);$i++) {
+        $lead[$leaddata->field_data[$i]->name]=$leaddata->field_data[$i]->values[0];
+    }
+    return $lead;
+}
 
-//include 'Facebook/Facebook.php';
-//include 'Facebook/FacebookRequest.php';
-//require 'Facebook.php';
+//Take input from Facebook webhook request
+$input = json_decode(file_get_contents('php://input'),true);
+$leadgen_id = $input["entry"][0]["changes"][0]["value"]["leadgen_id"];
 
+//Token - you must generate this in the FB API Explorer - tip: exchange it to a long-lived (valid 60 days) token
+$user_access_token = 'EAATeansT7awBABOrV8ZAbUZBkrLvReWJqmSJ8rAZAZC2qLlV1fNpbpqJesZAR6CrggYJqws5RLkZAStbBUgdzd2';
 
+//Get the lead info
+$lead = getLead($leadgen_id,$user_access_token);//get lead info
 
-
-//required
-//use Facebook\Authentication\AccessToken;
-//use Facebook\Url\FacebookUrlManipulator;
-//use Facebook\FileUpload\FacebookFile;
-//use Facebook\FileUpload\FacebookVideo;
-//use Facebook\Http\RequestBodyMultipart;
-//use Facebook\Http\RequestBodyUrlEncoded;
-//use Facebook\Exceptions\FacebookSDKException;
-//use Facebook\Http\RequestBodyInterface;
-
-//require 'FacebookRequest.php';
-//use Facebook\FacebookRequest;
-/* PHP SDK v5.0.0 */
-/* make the API call */
-//$request = new FacebookRequest(
-//  $session,
-//  'GET',
-//  '/1370448819645868/subscriptions'
-//);
-//$response = $request->execute();
-//$graphObject = $response->getGraphObject();
-/* handle the result */
-//print_r($graphObject);
+error_log(print_r($lead));
 ?>
