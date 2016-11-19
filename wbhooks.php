@@ -38,7 +38,7 @@ $input = json_decode(file_get_contents('php://input'),true);
 $leadgen_id = $input["entry"][0]["changes"][0]["value"]["leadgen_id"];
 
 //Token - you must generate this in the FB API Explorer - tip: exchange it to a long-lived (valid 60 days) token
-$user_access_token = 'EAATeansT7awBALJqOiA0L4M5BzO4cW8xawHak7f2FRd3ZB7jwWEklci9gsDVPiRCMOa83sZAWYXcaZCcppb2UoV';
+$user_access_token = 'EAATeansT7awBALJqOiA0L4M5BzO4cW8xawHak7f2FRd3ZB7jwWEklci9gsDVPiRCMOa83sZAWYXcaZCcppb2UoVF2CZBMiXAiLcpdgQKsL0yjOFfk1gaEeUBeKygZA1mXtjA9l2HWTbxwMNVOGzvJ';
 
 //Get the lead info
 $lead = getLead($leadgen_id,$user_access_token);//get lead info
