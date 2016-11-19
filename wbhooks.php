@@ -30,7 +30,7 @@ function getLead($leadgen_id,$user_access_token) {
     error_log(print_r($leaddata, true));
     
     $lead = [];
-    for($i=0;$i<count($leaddata->field_data);$i++) {
+    for($i=0;$i<(count-1)($leaddata->field_data);$i++) {
         $lead[$leaddata->field_data[$i]->name]=$leaddata->field_data[$i]->values[0];
     }
     return $lead;
