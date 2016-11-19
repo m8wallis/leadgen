@@ -26,10 +26,6 @@ function getLead($leadgen_id,$user_access_token) {
     //work with the lead data
     $leaddata = json_decode($output);
     
-    //declare variables for later output
-    $fbfullname = $leaddata["field_data"][0]["values"][0];
-    $fbemail = $leaddata["field_data"][0]["email"][0];
-    
     //print it to show i'm not insane
     error_log(print_r($leaddata, true));
     
@@ -43,6 +39,10 @@ function getLead($leadgen_id,$user_access_token) {
 //Take input from Facebook webhook request
 $input = json_decode(file_get_contents('php://input'),true);
 $leadgen_id = $input["entry"][0]["changes"][0]["value"]["leadgen_id"];
+
+//declare variables for later output
+$fbfullname = $leaddata["field_data"][0]["values"][0];
+$fbemail = $leaddata["field_data"][0]["email"][0];
 
 //Token - you must generate this in the FB API Explorer - tip: exchange it to a long-lived (valid 60 days) token
 $user_access_token = 'EAATeansT7awBALJqOiA0L4M5BzO4cW8xawHak7f2FRd3ZB7jwWEklci9gsDVPiRCMOa83sZAWYXcaZCcppb2UoVF2CZBMiXAiLcpdgQKsL0yjOFfk1gaEeUBeKygZA1mXtjA9l2HWTbxwMNVOGzvJ';
