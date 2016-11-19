@@ -35,7 +35,7 @@ use Facebook\FileUpload\FacebookVideo;
 use Facebook\Http\RequestBodyMultipart;
 use Facebook\Http\RequestBodyUrlEncoded;
 use Facebook\Exceptions\FacebookSDKException;
-use Facebook\Http\RequestBodyInterface;
+use Facebook\Http\RequestBodyInterface.php;
 
 
 /* PHP SDK v5.0.0 */
