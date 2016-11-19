@@ -1,6 +1,6 @@
 <?php
 include 'whatcounts-master/src/whatcounts_required.php';
-require 'facebook.php';
+require 'Facebook.php';
 
 $challenge = $_REQUEST['hub_challenge'];
 $verify_token = $_REQUEST['hub_verify_token'];
