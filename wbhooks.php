@@ -61,5 +61,6 @@ foreach($lead as $attr=>$val) {
 }
 $mail.="</blockquote></body></html>";
 error_log(print_r($mail, true));
+error_log(print_r(array_values($lead),true));
 
 ?>
