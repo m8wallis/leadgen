@@ -42,8 +42,8 @@ $user_access_token = 'EAATeansT7awBABOrV8ZAbUZBkrLvReWJqmSJ8rAZAZC2qLlV1fNpbpqJe
 //Get the lead info
 $lead = getLead($leadgen_id,$user_access_token);//get lead info
 
-$fbfullname = $lead["field_data"][0]["values"][0];
-$fbemail = $lead["field_data"][0]["email"][0];
+//$fbfullname = $lead["field_data"][0]["values"][0];
+//$fbemail = $lead["field_data"][0]["email"][0];
 
 //foreach($lead as $attr=>$val) {
 //    error_log(print_r($attr, true));
@@ -53,8 +53,9 @@ $fbemail = $lead["field_data"][0]["email"][0];
 //Create an email with the lead info
 $mail="<html><body><h2>New lead</h2><blockquote>";
 $mail.="Lead id: ".$leadgen_id."<br>";
-$mail.="Email: ".$fbemail."<br>";
-$mail.="Name: ".$fbfullname."<br>";
+//$mail.="Email: ".$fbemail."<br>";
+//$mail.="Name: ".$fbfullname."<br>";
+$mail.="Lead dump: ".$lead."<br>";
 foreach($lead as $attr=>$val) {
     $mail.=$attr.": ".$val."<br>";
 }
