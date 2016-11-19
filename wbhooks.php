@@ -8,8 +8,8 @@ if ($verify_token === 'abc12345') {
     echo $challenge;
 }
 
-$input = json_decode(file_get_contents('php://input'), true);
-error_log(print_r($input, true));
+//$input = json_decode(file_get_contents('php://input'), true);
+//error_log(print_r($input, true));
 
 //getlead function
 function getLead($leadgen_id,$user_access_token) {
