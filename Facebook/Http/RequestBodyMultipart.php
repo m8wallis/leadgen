@@ -24,6 +24,7 @@
 namespace Facebook\Http;
 
 use Facebook\FileUpload\FacebookFile;
+require_once('Facebook/Http/RequestBodyInterface.php');
 
 /**
  * Class RequestBodyMultipartt
