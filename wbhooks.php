@@ -30,14 +30,14 @@ require 'Facebook.php';
 
 
 //required
-use Authentication\AccessToken;
-use Url\FacebookUrlManipulator;
-use FileUpload\FacebookFile;
-use FileUpload\FacebookVideo;
-use Http\RequestBodyMultipart;
-use Http\RequestBodyUrlEncoded;
-use Exceptions\FacebookSDKException;
-use Http\RequestBodyInterface;
+use Facebook\Authentication\AccessToken;
+use Facebook\Url\FacebookUrlManipulator;
+use Facebook\FileUpload\FacebookFile;
+use Facebook\FileUpload\FacebookVideo;
+use Facebook\Http\RequestBodyMultipart;
+use Facebook\Http\RequestBodyUrlEncoded;
+use Facebook\Exceptions\FacebookSDKException;
+use Facebook\Http\RequestBodyInterface;
 
 require 'FacebookRequest.php';
 use Facebook\FacebookRequest;
