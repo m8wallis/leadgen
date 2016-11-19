@@ -42,8 +42,18 @@ $user_access_token = 'EAATeansT7awBABOrV8ZAbUZBkrLvReWJqmSJ8rAZAZC2qLlV1fNpbpqJe
 //Get the lead info
 $lead = getLead($leadgen_id,$user_access_token);//get lead info
 
+//foreach($lead as $attr=>$val) {
+//    error_log(print_r($attr, true));
+//    error_log(print_r($val, true));
+
+
+//Create an email with the lead info
+$mail="<html><body><h2>New lead</h2><blockquote>";
+$mail.="Lead id: ".$leadgen_id."<br>";
 foreach($lead as $attr=>$val) {
-    error_log(print_r($attr, true));
-    error_log(print_r($val, true));
+    $mail.=$attr.": ".$val."<br>";
 }
+$mail.="</blockquote></body></html>";
+error_log(print_r($mail, true));
+
 ?>
