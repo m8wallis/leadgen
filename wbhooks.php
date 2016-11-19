@@ -20,8 +20,10 @@ require_once('Facebook\FileUpload\FacebookVideo.php');
 require_once('Facebook\Http\RequestBodyMultipart.php');
 require_once('Facebook\Http\RequestBodyUrlEncoded.php');
 require_once('Facebook\Exceptions\FacebookSDKException.php');
+
 //include 'Facebook/Facebook.php';
 //include 'Facebook/FacebookRequest.php';
+use Facebook;
 use Facebook\FacebookRequest;
 
 //required
