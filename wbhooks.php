@@ -22,19 +22,21 @@ require_once('Facebook/Http/RequestBodyUrlEncoded.php');
 require_once('Facebook/Exceptions/FacebookSDKException.php');
 require_once('Facebook/Http/RequestBodyInterface.php');
 
+namespace Facebook;
+
 //include 'Facebook/Facebook.php';
 //include 'Facebook/FacebookRequest.php';
-use Facebook\FacebookRequest;
+use FacebookRequest;
 
 //required
-use Facebook\Authentication\AccessToken;
-use Facebook\Url\FacebookUrlManipulator;
-use Facebook\FileUpload\FacebookFile;
-use Facebook\FileUpload\FacebookVideo;
-use Facebook\Http\RequestBodyMultipart;
-use Facebook\Http\RequestBodyUrlEncoded;
-use Facebook\Exceptions\FacebookSDKException;
-use Facebook\Http\RequestBodyInterface;
+use Authentication\AccessToken;
+use Url\FacebookUrlManipulator;
+use FileUpload\FacebookFile;
+use FileUpload\FacebookVideo;
+use Http\RequestBodyMultipart;
+use Http\RequestBodyUrlEncoded;
+use Exceptions\FacebookSDKException;
+use Http\RequestBodyInterface;
 
 
 /* PHP SDK v5.0.0 */
