@@ -42,8 +42,8 @@ $user_access_token = 'EAATeansT7awBABOrV8ZAbUZBkrLvReWJqmSJ8rAZAZC2qLlV1fNpbpqJe
 //Get the lead info
 $lead = getLead($leadgen_id,$user_access_token);//get lead info
 
-$fbfullname = $lead["entry"][0]["changes"][0]["value"]["full_name"];
-$fbemail = $lead["entry"][0]["changes"][0]["value"]["email"];
+$fbfullname = $lead["field_data"][0]["values"][0];
+$fbemail = $lead["field_data"][0]["email"][0];
 
 //foreach($lead as $attr=>$val) {
 //    error_log(print_r($attr, true));
