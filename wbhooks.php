@@ -26,7 +26,7 @@ require_once('Facebook/Http/RequestBodyInterface.php');
 
 
 //include 'Facebook/Facebook.php';
-include 'FacebookRequest.php';
+include 'Facebook/FacebookRequest.php';
 use FacebookRequest;
 
 //required
