@@ -27,7 +27,7 @@ require_once('Facebook/Http/RequestBodyInterface.php');
 
 //include 'Facebook/Facebook.php';
 include 'Facebook/FacebookRequest.php';
-use FacebookRequest;
+//use FacebookRequest;
 
 //required
 use Authentication\AccessToken;
