@@ -1,4 +1,5 @@
 <?php
+namespace Facebook;
 include 'whatcounts-master/src/whatcounts_required.php';
 
 $challenge = $_REQUEST['hub_challenge'];
@@ -22,7 +23,7 @@ require_once('Facebook/Http/RequestBodyUrlEncoded.php');
 require_once('Facebook/Exceptions/FacebookSDKException.php');
 require_once('Facebook/Http/RequestBodyInterface.php');
 
-namespace Facebook;
+
 
 //include 'Facebook/Facebook.php';
 //include 'Facebook/FacebookRequest.php';
