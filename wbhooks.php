@@ -25,6 +25,7 @@ function getLead($leadgen_id,$user_access_token) {
 
     //work with the lead data
     $leaddata = json_decode($output);
+    error_log(print_r($leaddata, true));
     $lead = [];
     for($i=0;$i<count($leaddata->field_data);$i++) {
         $lead[$leaddata->field_data[$i]->name]=$leaddata->field_data[$i]->values[0];
