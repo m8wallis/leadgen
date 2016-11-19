@@ -43,7 +43,7 @@ $user_access_token = 'EAATeansT7awBABOrV8ZAbUZBkrLvReWJqmSJ8rAZAZC2qLlV1fNpbpqJe
 $lead = getLead($leadgen_id,$user_access_token);//get lead info
 
 foreach($lead as $attr=>$val) {
-    error_log(print_r($attr));
-    error_log(print_r($val));
+    error_log(print_r($attr, true));
+    error_log(print_r($val, true));
 }
 ?>
