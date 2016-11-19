@@ -26,9 +26,9 @@ error_log(print_r($input, true));
 //include 'Facebook/Facebook.php';
 //include 'Facebook/FacebookRequest.php';
 require 'Facebook.php';
-require 'FacebookRequest.php';
 
-use FacebookRequest;
+
+
 
 //required
 use Authentication\AccessToken;
@@ -40,7 +40,8 @@ use Http\RequestBodyUrlEncoded;
 use Exceptions\FacebookSDKException;
 use Http\RequestBodyInterface;
 
-
+require 'FacebookRequest.php';
+use FacebookRequest;
 /* PHP SDK v5.0.0 */
 /* make the API call */
 $request = new FacebookRequest(
