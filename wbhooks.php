@@ -30,12 +30,16 @@ function getLead($leadgen_id,$user_access_token) {
     error_log(print_r($leaddata, true));
     
     $lead = [];
-    for($i=0;$i<(count-1)($leaddata->field_data);$i++) {
+    for($i=0;$i<count($leaddata->field_data);$i++) {
         $lead[$leaddata->field_data[$i]->name]=$leaddata->field_data[$i]->values[0];
     }
     return $lead;
 }
 
+foreach($lead as $attr=>$val) {
+    
+}
+    
 //Take input from Facebook webhook request
 $input = json_decode(file_get_contents('php://input'),true);
 $leadgen_id = $input["entry"][0]["changes"][0]["value"]["leadgen_id"];
@@ -67,6 +71,10 @@ foreach($lead as $attr=>$val) {
 }
 $mail.="</blockquote></body></html>";
 error_log(print_r($mail, true));
+
+extract($lead, EXTR_PREFIX_SAME);
+error_log(print_r($email, true));
+error_log(print_r($full_name, true));
 
 $string=implode(",",$lead);
 error_log(print_r($string, true));
