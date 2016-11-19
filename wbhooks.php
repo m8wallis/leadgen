@@ -25,7 +25,14 @@ function getLead($leadgen_id,$user_access_token) {
 
     //work with the lead data
     $leaddata = json_decode($output);
+    
+    //declare variables for later output
+    $fbfullname = $leaddata["field_data"][0]["values"][0];
+    $fbemail = $leaddata["field_data"][0]["email"][0];
+    
+    //print it to show i'm not insane
     error_log(print_r($leaddata, true));
+    
     $lead = [];
     for($i=0;$i<count($leaddata->field_data);$i++) {
         $lead[$leaddata->field_data[$i]->name]=$leaddata->field_data[$i]->values[0];
@@ -43,8 +50,6 @@ $user_access_token = 'EAATeansT7awBALJqOiA0L4M5BzO4cW8xawHak7f2FRd3ZB7jwWEklci9g
 //Get the lead info
 $lead = getLead($leadgen_id,$user_access_token);//get lead info
 
-$fbfullname = $leaddata["field_data"][0]["values"][0];
-$fbemail = $leaddata["field_data"][0]["email"][0];
 
 //foreach($lead as $attr=>$val) {
 //    error_log(print_r($attr, true));
