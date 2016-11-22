@@ -17,4 +17,9 @@
         "bin/heroku-php-apache2",
         "bin/heroku-php-nginx"
     ]
+{
+  "require": {
+    "zaycon/whatcounts": "1.0.*"
+  }
+}
 }
