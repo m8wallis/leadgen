@@ -1,6 +1,8 @@
 <?php
 namespace GuzzleHttp;
 
+include 'whatcounts-master/src/GuzzleHttp/ClientInterface.php';
+
 use GuzzleHttp\Cookie\CookieJar;
 use GuzzleHttp\Promise;
 use GuzzleHttp\Psr7;
