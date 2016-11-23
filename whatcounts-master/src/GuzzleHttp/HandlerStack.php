@@ -1,6 +1,8 @@
 <?php
 namespace GuzzleHttp;
 
+include 'whatcounts-master/src/GuzzleHttp/Middleware.php';
+
 use Psr\Http\Message\RequestInterface;
 
 /**
