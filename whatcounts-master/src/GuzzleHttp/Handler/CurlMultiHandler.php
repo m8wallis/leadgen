@@ -1,6 +1,8 @@
 <?php
 namespace GuzzleHttp\Handler;
 
+include 'whatcounts-master/src/GuzzleHttp/Handler/CurlFactory.php';
+
 use GuzzleHttp\Promise as P;
 use GuzzleHttp\Promise\Promise;
 use GuzzleHttp\Psr7;
