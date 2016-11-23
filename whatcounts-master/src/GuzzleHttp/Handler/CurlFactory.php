@@ -1,6 +1,8 @@
 <?php
 namespace GuzzleHttp\Handler;
 
+include 'whatcounts-master/src/GuzzleHttp/Handler/CurlFactoryInterface.php';
+
 use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Exception\ConnectException;
 use GuzzleHttp\Promise\FulfilledPromise;
