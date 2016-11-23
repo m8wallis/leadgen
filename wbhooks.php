@@ -48,7 +48,7 @@ extract($lead, EXTR_SKIP);
 $whatcounts = new ZayconWhatCounts\WhatCounts(skullcandy,etyline14322);
 
 //get whatcounts realm settings
-$realm = $whatcounts->getRealmSettings();
+//$realm = $whatcounts->getRealmSettings();
 
 //Prep new subscriber for whatcounts
 $subscriber = new ZayconWhatCounts\Subscriber;
