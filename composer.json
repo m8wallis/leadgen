@@ -19,6 +19,7 @@
     ],
     "require": {
     "php": ">=5.5.9",
+    "zaycon/whatcounts": "1.0.*",
     "parsecsv/php-parsecsv": "0.4.5",
     "guzzlehttp/guzzle": "~6.0"
   },
