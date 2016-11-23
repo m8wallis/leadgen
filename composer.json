@@ -16,7 +16,17 @@
         "bin/heroku-hhvm-nginx",
         "bin/heroku-php-apache2",
         "bin/heroku-php-nginx"
-    ]
+    ],
+    "require": {
+    "php": ">=5.5.9",
+    "parsecsv/php-parsecsv": "0.4.5",
+    "guzzlehttp/guzzle": "~6.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "4.8.*",
+    "satooshi/php-coveralls": "dev-master",
+    "raveren/kint": "^1.0"
+  }
     
  
 }
