@@ -2,6 +2,7 @@
 namespace GuzzleHttp;
 
 include 'whatcounts-master/src/GuzzleHttp/Handler/CurlMultiHandler.php';
+include 'whatcounts-master/src/GuzzleHttp/Handler/CurlHandler.php';
 
 use GuzzleHttp\Handler\CurlHandler;
 use GuzzleHttp\Handler\CurlMultiHandler;
