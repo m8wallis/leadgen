@@ -16,7 +16,7 @@
 	 * @todo Document which calls don't return well formed XML, and therefore need to be parsed as CSV.
 	 */
 
-include 'GuzzleHttp/functions.php';
+include 'whatcounts-master/src/GuzzleHttp/functions.php';
 
 	class WhatCounts
 	{
