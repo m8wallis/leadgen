@@ -1,4 +1,6 @@
 <?php
+
+include 'GuzzleHttp/functions.php';
 	/**
 	 * Created by PhpStorm.
 	 * User: Tony DeStefano
