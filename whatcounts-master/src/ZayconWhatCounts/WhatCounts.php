@@ -17,7 +17,7 @@
 	 */
 
 include 'whatcounts-master/src/GuzzleHttp/functions.php';
-include 'whatcounts-master/src/GuzzleHttp/client.php';
+include 'whatcounts-master/src/GuzzleHttp/Client.php';
 
 	class WhatCounts
 	{
