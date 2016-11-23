@@ -2,6 +2,7 @@
 namespace GuzzleHttp;
 
 include 'whatcounts-master/src/GuzzleHttp/ClientInterface.php';
+include 'whatcounts-master/src/GuzzleHttp/HandlerStack.php';
 
 use GuzzleHttp\Cookie\CookieJar;
 use GuzzleHttp\Promise;
