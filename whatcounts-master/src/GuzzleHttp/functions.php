@@ -1,6 +1,8 @@
 <?php
 namespace GuzzleHttp;
 
+include 'whatcounts-master/src/GuzzleHttp/Handler/CurlMultiHandler.php';
+
 use GuzzleHttp\Handler\CurlHandler;
 use GuzzleHttp\Handler\CurlMultiHandler;
 use GuzzleHttp\Handler\Proxy;
