@@ -1,4 +1,7 @@
 <?php
+//Require composer's autoloader for zayconwhatcounts
+require 'vendor/autoload.php';
+
 //include whatcounts php script
 include 'whatcounts-master/src/whatcounts_required.php';
 
