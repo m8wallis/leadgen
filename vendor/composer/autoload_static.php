@@ -9,8 +9,8 @@ class ComposerStaticInit769949b30c984040c33cf5c68efb81c2
     public static $files = array (
         'c964ee0ededf28c96ebd9db5099ef910' => __DIR__ . '/..' . '/guzzlehttp/promises/src/functions_include.php',
         'a0edc8309cc5e1d60e3047b5df6b7052' => __DIR__ . '/..' . '/guzzlehttp/psr7/src/functions_include.php',
-        '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
         '37a3dc5111fe8f707ab4c132ef1dbc62' => __DIR__ . '/..' . '/guzzlehttp/guzzle/src/functions_include.php',
+        '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
         '6bc45d0537e6858fd179bdbc31d62c79' => __DIR__ . '/..' . '/raveren/kint/Kint.class.php',
     );
 
@@ -121,6 +121,13 @@ class ComposerStaticInit769949b30c984040c33cf5c68efb81c2
     );
 
     public static $prefixesPsr0 = array (
+        'Z' => 
+        array (
+            'ZayconWhatCounts\\' => 
+            array (
+                0 => __DIR__ . '/..' . '/zaycon/whatcounts/src',
+            ),
+        ),
         'P' => 
         array (
             'Prophecy\\' => 

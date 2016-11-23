@@ -1919,5 +1919,62 @@
             "kint",
             "php"
         ]
+    },
+    {
+        "name": "zaycon/whatcounts",
+        "version": "1.0.2",
+        "version_normalized": "1.0.2.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/ZayconFoods/whatcounts.git",
+            "reference": "b17319996cd38ae78b2f2105c0de68ebbe888222"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/ZayconFoods/whatcounts/zipball/b17319996cd38ae78b2f2105c0de68ebbe888222",
+            "reference": "b17319996cd38ae78b2f2105c0de68ebbe888222",
+            "shasum": ""
+        },
+        "require": {
+            "guzzlehttp/guzzle": "~6.0",
+            "parsecsv/php-parsecsv": "0.4.5",
+            "php": ">=5.5.9"
+        },
+        "require-dev": {
+            "phpunit/phpunit": "4.8.*",
+            "raveren/kint": "^1.0",
+            "satooshi/php-coveralls": "dev-master"
+        },
+        "time": "2016-02-17 16:15:57",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "ZayconWhatCounts\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Tony DeStefano",
+                "email": "tony@zayconfresh.com",
+                "homepage": "https://www.zayconfresh.com",
+                "role": "Developer"
+            },
+            {
+                "name": "Mark Simonds",
+                "email": "mark@zayconfresh.com",
+                "homepage": "https://www.zayconfresh.com",
+                "role": "Developer"
+            }
+        ],
+        "description": "PHP API Wrapper for the WhatCounts HTTP API",
+        "homepage": "https://github.com/ZayconFoods/whatcounts",
+        "keywords": [
+            "WhatCounts"
+        ]
     }
 ]

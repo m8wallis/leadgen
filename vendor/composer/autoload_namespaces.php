@@ -6,5 +6,6 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'ZayconWhatCounts\\' => array($vendorDir . '/zaycon/whatcounts/src'),
     'Prophecy\\' => array($vendorDir . '/phpspec/prophecy/src'),
 );
