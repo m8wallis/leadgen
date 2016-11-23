@@ -5,7 +5,7 @@ include 'whatcounts-master/src/GuzzleHttp/ClientInterface.php';
 include 'whatcounts-master/src/GuzzleHttp/HandlerStack.php';
 include 'whatcounts-master/src/GuzzleHttp/Handler/Proxy.php';
 include 'whatcounts-master/src/GuzzleHttp/RedirectMiddleware.php';
-
+include 'whatcounts-master/src/GuzzleHttp/RequestOptions.php';
 
 use GuzzleHttp\Cookie\CookieJar;
 use GuzzleHttp\Promise;
