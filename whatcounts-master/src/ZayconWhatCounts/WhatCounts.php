@@ -1,6 +1,4 @@
 <?php
-
-include 'GuzzleHttp/functions.php';
 	/**
 	 * Created by PhpStorm.
 	 * User: Tony DeStefano
@@ -17,6 +15,8 @@ include 'GuzzleHttp/functions.php';
 	 * @todo Pass function parameters by reference if it is going to be returned
 	 * @todo Document which calls don't return well formed XML, and therefore need to be parsed as CSV.
 	 */
+
+include 'GuzzleHttp/functions.php';
 
 	class WhatCounts
 	{
