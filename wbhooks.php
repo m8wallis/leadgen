@@ -1,7 +1,6 @@
 <?php
 //include whatcounts php script
 include 'whatcounts-master/src/whatcounts_required.php';
-include 'whatcounts-master/src/GuzzleHttp/functions.php';
 
 //FB Webhook validation
 $challenge = $_REQUEST['hub_challenge'];
