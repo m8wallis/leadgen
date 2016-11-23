@@ -16,7 +16,7 @@
         "bin/heroku-hhvm-nginx",
         "bin/heroku-php-apache2",
         "bin/heroku-php-nginx",
-        "parsecsv/php-parsecsv": "0.4.5"
     ]
+    "require": { "laravel/framework": "4.2.", "mews/captcha": "1.0.", "guzzlehttp/guzzle": "~4.0" },
  
 }
