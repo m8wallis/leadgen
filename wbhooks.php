@@ -53,11 +53,16 @@ $realm = $whatcounts->getRealmSettings();
 //Prep new subscriber for whatcounts
 $subscriber = new ZayconWhatCounts\Subscriber;
 $subscriber
-    ->setFirstName(full_name);
-    ->setEmail(email);
+    ->setFirstName("$full_name");
+$subscriber
+    ->setEmail("$email");
+$subscriber
     ->setForceSub(false);
+$subscriber
     ->setFormat(99);
+$subscriber
     ->setOverrideConfirmation(false);
+$subscriber
     ->setListId(115);
 
 $subscribers = $whatcounts->subscribe($subscriber);
