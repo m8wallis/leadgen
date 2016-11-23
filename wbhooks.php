@@ -45,7 +45,7 @@ $lead = getLead($leadgen_id,$user_access_token);
 extract($lead, EXTR_SKIP);
 
 //initialize whatcounts variable with API credentials
-$whatcounts = new ZayconWhatCounts\WhatCounts( skullcandy, etyline14322 );
+$whatcounts = new ZayconWhatCounts\WhatCounts(skullcandy,etyline14322);
 
 //get whatcounts realm settings
 $realm = $whatcounts->getRealmSettings();
