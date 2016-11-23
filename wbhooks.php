@@ -68,7 +68,7 @@ $subscriber
 $subscribers = $whatcounts->subscribe($subscriber);
 
 //Print the variables to the error log to show it's working
-error_log(print_r($email, true));
-error_log(print_r($full_name, true));
+//error_log(print_r($email, true));
+//error_log(print_r($full_name, true));
 
 ?>
