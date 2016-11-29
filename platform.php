@@ -1,4 +1,15 @@
-<h2>Platform Page Test</h2>
+<h2>Custom Lead Gen Integration App: SkullCandy to WhatCounts</h2>
+<p>Please follow these instructions to subscribe to this custom app. Whichever Facebook Page/Account controls the Lead Gen Form will need to be subscribed to the app for the leads to be added to WhatCounts automatically.</p>
+<ol>
+  <li>Click "Login with Facebook" button</li>
+  <ul>
+    <li>If already logged in to Facebook, you will see a list of Facebook Pages/Accounts appear which you control</li>
+    <li>If you are not logged in, to you will prompted to do so, then will see that list appear</li>
+  </ul>
+  <li>Click the Facebook Page / Account that you would like to subcribe this App to</li>
+  <li>BOOM! This Facebook App is now subscribed</li>
+  <li>Now please ensure that things are setup correctly within WhatCounts, and that the correct List is attached to the correct Facebook Lead Form, and leads will be entered in automatically as users complete the lead form via Facebook</li>
+</ol>
 
 <script>
   window.fbAsyncInit = function() {
