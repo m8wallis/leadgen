@@ -62,8 +62,9 @@ extract($lead, EXTR_SKIP);
 //For instance, if you have "email" as the field you're pulling from facebook, the "email" line below would look like this:
 //$fb_email = $email;
 //So leave the first field alone (as it's mapped later on in this script, but replace the second variable with the name of the Facebook variable you're using.
-$fb_first_name = $firstname;
-$fb_last_name = $lastname;
+$fb_full_name = $full_name;
+//$fb_first_name = $firstname;
+//$fb_last_name = $lastname;
 $fb_email = $email;
 //this area commented out for fields you're not using.  If you choose to use these fields, uncomment them here and then at their corresponding lines starting at line 95
 //$fb_address1 = $address1;
@@ -87,9 +88,9 @@ $realm = $whatcounts->getRealmSettings();
 //Prep new subscriber for whatcounts
 $subscriber = new ZayconWhatCounts\Subscriber;
 $subscriber
-    ->setFirstName("$fb_first_name");
-$subscriber
-    ->setLastName("$fb_last_name");
+    ->setFirstName("$fb_full_name");
+//$subscriber
+//    ->setLastName("$fb_last_name");
 $subscriber
     ->setEmail("$fb_email");
 //This section commented out as unnecessary fields- if you want to gather any of this data via your FaceBook form feel free to uncomment these.
